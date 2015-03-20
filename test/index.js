@@ -9,4 +9,10 @@ describe('prop', function() {
     expect(prop('a.b')(obj)).to.equal(undefined);
     expect(prop('b.c')(obj)).to.equal(2);
   });
+
+  it('should return the object itself if empty string is passed', function() {
+    var obj = {};
+
+    expect(prop('')(obj)).to.equal(obj);
+  });
 });

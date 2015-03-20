@@ -1,5 +1,5 @@
 module.exports = function(path) {
-  var parts = path.split('.');
+  var parts = path ? path.split('.') : [];
 
   return function(obj) {
     return parts.reduce(function(memo, part) {
