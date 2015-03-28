@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/weo-edu/prop",
   "devDependencies": {
-    "chai": "^2.1.0",
     "mocha": "^2.1.0"
   }
 }
